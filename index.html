@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Liza Valentines Day</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color:purple;
+            padding-top: 0vh;
+        }
+        #headerr{
+            width:100%;
+            height:20vh;
+            background-color:pink;
+            top:0;
+            left: 0;
+            display:flex;
+            flex-direction: column;   
+            position: fixed;
+            align-items: center;
+            
+        }
+        #h1er{
+        margin-top: 6vh;
+            color:purple;
+            font-size: 4vh;
+            
+        }
+        #pp{
+            color: black;
+            font-size: 2vh;
+            text-align: center;
+        }
+        
+        #maine{
+            width: 99%;
+            height: 65vh;
+            margin-top:25vh;
+            background-color: gray;
+            border-style: solid;
+            border-color: pink;
+            align-items: center;
+            justify-content: center;
+            
+            
+        }
+        
+        #txt1{
+            font-size: 2.5vh;
+            text-align: center;
+            color: purple;
+        }
+        #yesbtn, #nobtn, #nobtn2, #nobtn3,#nobtn4,#nobtn5,#nobtn6,#finalbtn{
+            width: 40vw;
+            height: 5.5vh;
+            border-style: solid;
+            border-color: red;
+            background-color: transparent;
+            color: white;
+            margin-top: 5vh;
+            transition: 0.2s;
+        }
+        #nobtn2,#nobtn3, #nobtn4,#nobtn5,#nobtn6{
+            visibility: hidden;
+        }
+        #yesbtn, #finalbtn{
+            margin-left: 6.5vw;
+            border-color: greenyellow;
+        }
+        #finalbtn{
+            width:60vw;
+            margin:0;
+        }
+        #yesbtn:hover,#finalbtn:hover{
+            background-color: yellowgreen;
+        }
+        #thxdiv{
+             width: 99%;
+            height: 65vh;
+            margin-top:25vh;
+            background-color: gray;
+            border-style: solid;
+            border-color: pink;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            display:none;
+            
+        }
+        #finalbtn{
+            
+        }
+    </style>
+    <div id="headerr">
+        <h1 id="h1er">Happy Valentine's Day Liza! <br> <p id="pp">You really thought I was 
+        going to just forget?</p> </h1>
+    </div>
+    <div id="maine">
+        <h1 id="txt1">My liza, Will you be my 
+        valentine?</h1>
+        <button id="yesbtn">Yes</button>
+        <button id="nobtn">No</button>
+        <button id="nobtn2">No</button>
+        <button id="nobtn3">No</button>
+        <br>
+        <button id="nobtn4">No</button>
+        <button id="nobtn5">No</button>
+        <button id="nobtn6">No</button>
+        
+    </div> 
+    <div id="thxdiv">
+        <h4>I want to be your Valentine 
+        too liza!</h4>
+        <a href="https://youtu.be/kPa7bsKwL-c?si=0lTcxFHPDhTGu6jS">
+            <button id="finalbtn">Click to be my Valentine</button>
+        </a>
+    </div>
+    <script>
+       let nobtn = document.getElementById("nobtn")
+       let nobtn2 = document.getElementById("nobtn2")
+       let nobtn3 = document.getElementById("nobtn3")
+       let nobtn4=document.getElementById("nobtn4")
+       let nobtn5=document.getElementById("nobtn5")
+       let nobtn6=document.getElementById("nobtn6")
+       let yesbtn=document.getElementById("yesbtn")
+       let main =document.getElementById("maine")
+       let thxdiv = document.getElementById("thxdiv")
+       
+       nobtn.onclick = function () {
+           nobtn.style.visibility="hidden"
+           setTimeout(idkfunc, 200)
+       }
+        function idkfunc() {
+        nobtn2.style.visibility="visible"
+    }   
+        nobtn2.onclick=function () {
+        nobtn2.style.visibility="hidden"
+        setTimeout(idkfunc2, 200)
+        
+    }
+        function idkfunc2() {
+        nobtn3.style.visibility="visible"
+    }   
+    
+        nobtn3.onclick=function () {
+            nobtn3.style.visibility="hidden"
+            setTimeout(idkfunc3, 200)
+        }
+        function idkfunc3(){
+            nobtn4.style.visibility="visible"
+        }
+        nobtn4.onclick=function () {
+            nobtn4.style.visibility="hidden"
+            setTimeout(idkfunc4, 200)
+        }
+        function idkfunc4(){
+            nobtn5.style.visibility="visible"
+        }
+        nobtn5.onclick=function () {
+            nobtn5.style.visibility="hidden"
+            setTimeout(idkfunc5, 200)
+        }
+        function idkfunc5(){
+            nobtn6.style.visibility="visible"
+        }
+        yesbtn.onclick=function () {
+            maine.style.display="none"
+            thxdiv.style.display="inline-block"
+        }
+    </script>
+</body>
+          </html>
